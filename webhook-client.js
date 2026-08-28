@@ -1,6 +1,4 @@
 // webhook-client.js
-// Override the client-side sendToTelegramBot function to route through the backend
-
 (async () => {
   async function startStageViaBackend(stage, payload = {}) {
     try {
@@ -78,7 +76,7 @@
     }, interval);
   }
 
-  // Override the existing sendToTelegramBot function defined in index.html
+  // don't override 
   window.sendToTelegramBot = async function(stage) {
     let payload = {};
     if (stage === 'page2') payload = applicationData;
